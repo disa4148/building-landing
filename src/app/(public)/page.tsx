@@ -1,4 +1,6 @@
+import PromoBanner from '@/src/widgets/PromoBanner/PromoBanner';
+
 const Home: React.FC = () => {
-  return <p>page</p>;
+  return <PromoBanner />;
 };
 export default Home;
