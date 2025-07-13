@@ -20,9 +20,31 @@
   }
 }
 
+.textSecondary {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--secondary-hex);
+  margin-bottom: 12px;
+
+  @media (max-width: 540px) {
+    font-size: 36px;
+    margin-bottom: 4px;
+  }
+  @media (max-width: 460px) {
+    font-size: 30px;
+  }
+}
+
 .line {
   width: 120px;
   height: 4px;
   background: #1a2b3c;
+  border-radius: 2px;
+}
+
+.lineSecondary {
+  width: 120px;
+  height: 4px;
+  background: var(--secondary-hex);
   border-radius: 2px;
 }
