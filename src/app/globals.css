@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
+  background-color: var(--primary-hex);
 }
 
 body {
