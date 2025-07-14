@@ -22,7 +22,7 @@ const features = [
 ];
 
 const Features = (): JSX.Element => (
-  <section className={css.section}>
+  <section className={css.section} id="features">
     <div className={css.container}>
       <Title color="secondary">Наши преимущества</Title>
       <div className={css.grid}>

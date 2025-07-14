@@ -5,7 +5,7 @@ import css from './About.module.scss';
 
 const About = (): JSX.Element => {
   return (
-    <section className={css.aboutSection}>
+    <section className={css.aboutSection} id="about">
       <Title>О компании</Title>
       <div className={css.aboutContainer}>
         <div className={css.left}>

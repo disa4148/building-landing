@@ -33,7 +33,7 @@ const steps = [
 
 export default function WorkProcess(): JSX.Element {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="process">
       <Title color="primary">Как мы работаем</Title>
       <div className={css.container}>
         <div className={css.grid}>

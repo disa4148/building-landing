@@ -18,7 +18,7 @@ const images = Array.from(
 
 const WorksCarousel = (): JSX.Element => {
   return (
-    <div className={css.wrapper}>
+    <div className={css.wrapper} id="works">
       <Title color="secondary">Наши работы</Title>
       <Carousel className={css.carousel}>
         <CarouselContent>
