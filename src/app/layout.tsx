@@ -20,6 +20,29 @@ export const metadata: Metadata = {
 const montserrat = Montserrat({ subsets: ['cyrillic', 'latin'] });
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    name: 'ООО Стройресурс',
+    //Поменять, как появится лого
+    image: 'https://xn--42-9kclfb7a0agct0a.xn--p1ai/assets/images/carousel/item1.jpg',
+    description: 'Производство и укладка печатного бетона под ключ в Кемерово.',
+    url: 'https://xn--42-9kclfb7a0agct0a.xn--p1ai/',
+    telephone: '+79234839377',
+    priceRange: '₽₽',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Кемерово',
+      addressRegion: 'Кемеровская область',
+      addressCountry: 'RU',
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Кемерово',
+    },
+  };
+
   return (
     <html lang="ru" suppressHydrationWarning>
       <body
@@ -28,6 +51,11 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           montserrat.className,
         )}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         {children}
       </body>
     </html>
