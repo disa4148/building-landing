@@ -9,9 +9,18 @@ export const metadata: Metadata = {
   title: 'Печатный и декоративный бетон в Кемерово',
   description: 'Производство и укладка печатного бетона под ключ в Кемерово. Имитация камня, дерева, кирпича.',
   keywords: 'печатный бетон Кемерово, декоративный бетон Кемерово, штампованный бетон, укладка печатного бетона, бетон под камень, бетон под дерево, заказать печатный бетон, бетон 42',
+  icons: {
+    icon: '/assets/images/logo/logo-32x32.svg',
+    shortcut: '/assets/images/logo/logo-32x32.svg',
+    apple: '/assets/images/logo/logo-32x32.svg',
+  },
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Печатный и декоративный бетон в Кемерово',
     description: 'Производство и укладка печатного бетона под ключ в Кемерово.',
+    url: '/',
     locale: 'ru_RU',
     type: 'website',
   },
